@@ -1,0 +1,12 @@
+.nav-link{
+    color:white;
+    font-weight:bold;
+    font-size:32px;
+}
+
+nav.navbar {
+    background-color: #535353;
+}
+#right{
+    float:right;
+}
