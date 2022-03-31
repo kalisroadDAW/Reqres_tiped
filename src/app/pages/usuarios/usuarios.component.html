@@ -1,0 +1,32 @@
+<h1>
+    
+    <div class="row">
+        <div class="col">
+            <table class="table table table-striped" style="text-align: center; font-size: 28px;">
+                <thead clas="thead-light">
+
+                    <tr>
+                        <th>Avatar</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let usuario of usuarios">
+                        <td><img src="{{usuario.avatar}}" style="border: 3px solid; color: #0d6efd" class="rounded-circle z-depth-2" width="50px" height="50px"><p></p><button type="button" class="btn btn-secondary btn"><a href="/Update" style="color:white">Details</a></button></td>
+                        <td><br/><br/>{{usuario.first_name}}</td>
+                        <td><br/><br/>{{usuario.last_name}}</td>
+                        <td><br/><br/>{{usuario.email}}</td>
+                    </tr>
+               
+            </table>
+        </div>
+    </div>
+
+
+</h1>
+
+<router-outlet></router-outlet>
